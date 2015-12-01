@@ -124,7 +124,7 @@ public class FilterMain extends HttpServlet
         writer.println("<td>Email</td><td><textarea name='mail' "
                 + "cols='40' rows='1'></textarea></td>");
         writer.println("</tr><tr>");
-        writer.println("<td>Enrollment No</td><td><textarea name='enro' "
+        writer.println("<td>Enrollment No</td><td><textarea name=\"enro\" "
                 + "cols='40' rows='1'></textarea></td></tr>");
         
         writer.println("<tr><td>Category</td><td><select name=\"category\"><option value=\"All\">All</option> <option value=\"SC\">SC</option><option value=\"ST\">ST</option>"
@@ -139,28 +139,28 @@ public class FilterMain extends HttpServlet
 				+"<input type=\"radio\" name=\"dob\" value=\"On\">On<input type=\"radio\" name=\"dob\" value=\"After\">After</td></tr>");
        
 		writer.println("<br><tr><td>Choose the date:</td><td><input type=\"date\" name=\"dateofbirth\"></td></tr>");
-		writer.println("<tr><td>PhD Stream</td><td><select name=\"phdStrm\"><option value=\"All\">All</option> <option value=\"Computer Science\">Computer Science</option><option value=\"Information Techonology\">ST</option>"
-        		+"<option value=\"General\">General</option></select></td></tr>");
-		writer.println("<tr><td>Graduation Degree</td><td><select name=\"GradDegree\"><option value=\"All\">All</option> <option value=\"SC\">SC</option><option value=\"ST\">ST</option>"
-        		+"<option value=\"General\">General</option></select></td></tr>");
-		writer.println("<tr><td>Post Graduation Degree</td><td><select name=\"PGDegree\"><option value=\"All\">All</option> <option value=\"SC\">SC</option><option value=\"ST\">ST</option>"
-        		+"<option value=\"General\">General</option></select></td></tr>");
-		writer.println("<tr><td>Class X Board</td><td><select name=\"XB\"><option value=\"All\">All</option> <option value=\"SC\">SC</option><option value=\"ST\">ST</option>"
-        		+"<option value=\"General\">General</option></select></td></tr>");
-		writer.println("<tr><td>Class XII Board</td><td><select name=\"XIIB\"><option value=\"All\">All</option> <option value=\"SC\">SC</option><option value=\"ST\">ST</option>"
-        		+"<option value=\"General\">General</option></select></td></tr>");
-		writer.println("<tr><td>Graduation Dept</td><td><select name=\"GradDept\"><option value=\"All\">All</option> <option value=\"SC\">SC</option><option value=\"ST\">ST</option>"
-        		+"<option value=\"General\">General</option></select></td></tr>");
-		writer.println("<tr><td>Post Grad Dept</td><td><select name=\"PGDept\"><option value=\"All\">All</option> <option value=\"SC\">SC</option><option value=\"ST\">ST</option>"
-        		+"<option value=\"General\">General</option></select></td></tr>");
+		writer.println("<tr><td>PhD Stream</td><td><select name=\"phdStrm\"><option value=\"All\">All</option> <option value=\"Computer Science\">Computer Science</option><option value=\"Electronics and Communication\">Electronics and Communication</option>"
+        		+"<option value=\"Computational Biology\">Computational Biology</option></select></td></tr>");
+		writer.println("<tr><td>Graduation Degree</td><td><select name=\"GradDegree\"><option value=\"All\">All</option> <option value=\"B.Tech\">B.Tech</option>"
+        		+"</select></td></tr>");
+		writer.println("<tr><td>Post Graduation Degree</td><td><select name=\"PGDegree\"><option value=\"All\">All</option> <option value=\"M.Tech\">M.Tech</option>"
+        		+"</select></td></tr>");
+		writer.println("<tr><td>Class X Board</td><td><select name=\"XB\"><option value=\"All\">All</option><option value=\"State Board\">State Board</option> <option value=\"CBSE\">CBSE</option><option value=\"ICSE\">ICSE</option>"
+        		+"</select></td></tr>");
+		writer.println("<tr><td>Class XII Board</td><td><select name=\"XIIB\"><option value=\"All\">All</option><option value=\"State Board\">State Board</option> <option value=\"CBSE\">CBSE</option><option value=\"ICSE\">ICSE</option>"
+        		+"</select></td></tr>");
+		writer.println("<tr><td>Graduation Dept</td><td><select name=\"GradDept\"><option value=\"All\">All</option> <option value=\"Computer Science\">Computer Science</option><option value=\"Information Technology\">Information Technology</option>"
+        		+"<option value=\"Electronics and Communication\">Electronics and Communication</option></select></td></tr>");
+		writer.println("<tr><td>Post Grad Dept</td><td><select name=\"PGDept\"><option value=\"All\">All</option> <option value=\"Computer Science\">Computer Science</option><option value=\"Information Technology\">Information Technology</option>"
+        		+"<option value=\"Electronics and Communication\">Electronics and Communication</option></select></td></tr>");
 		 writer.println("<tr><td>Graduation University</td><td><textarea name='GradUniv' "
 	                + "cols='40' rows='1'></textarea></td></tr>");
 		 writer.println("<tr><td>Post Graduation University</td><td><textarea name='PGUniv' "
 	                + "cols='40' rows='1'></textarea></td></tr>");
-		 writer.println("<tr><td>Graduation State</td><td><select name=\"GradState\"><option value=\"All\">All</option> <option value=\"SC\">SC</option><option value=\"ST\">ST</option>"
-	        		+"<option value=\"General\">General</option></select></td></tr>");
-		 writer.println("<tr><td>Post Grad State</td><td><select name=\"PGState\"><option value=\"All\">All</option> <option value=\"SC\">SC</option><option value=\"ST\">ST</option>"
-	        		+"<option value=\"General\">General</option></select></td></tr>");
+		 writer.println("<tr><td>Graduation State</td><td><select name=\"GradState\"><option value=\"All\">All</option> <option value=\"Delhi\">Delhi</option><option value=\"Andhra Pradesh\">Andhra Pradesh</option>"
+	        		+"<option value=\"Tamil Nadu\">Tamil Nadu</option><option value=\"Maharashtra\">Maharashtra</option><option value=\"West Bengal\">West Bengal</option</select></td></tr>");
+		 writer.println("<tr><td>Post Grad State</td><td><select name=\"PGState\"><option value=\"All\">All</option> <option value=\"Delhi\">Delhi</option><option value=\"Andhra Pradesh\">Andhra Pradesh</option>"
+	        		+"<option value=\"Tamil Nadu\">Tamil Nadu</option><option value=\"Maharashtra\">Maharashtra</option><option value=\"West Bengal\">West Bengal</option</select></td></tr>");
 		 writer.println("<tr><td>Class X Board Percentage</td><td><input type=\"radio\" name=\"XBPercen\" value=\"Greater than\">Greater than"
 					+"<input type=\"radio\" name=\"XBPercen\" value=\"Equal\">Equal<input type=\"radio\" name=\"XBPercen\" value=\"Less than\">Less than</td>"
 					+ "<td><textarea name='XBPercent' cols='5' rows='1'></textarea></td></tr>");
@@ -193,7 +193,7 @@ public class FilterMain extends HttpServlet
 		// TODO Auto-generated method stub
 		response.setContentType("text/html");
 		PrintWriter writer = response.getWriter();
-		
+		int valid=1;
 		if(value==0)
 		{	
 			for(Applicant temp:personData)
@@ -229,11 +229,11 @@ public class FilterMain extends HttpServlet
         	    	rb3=request.getParameter("dob");
         	    	if(rb3!=null && !request.getParameter("dateofbirth").equals(""))
         	    	{	
-        	    		if(rb3.equals("After") && request.getParameter("dateofbirth").compareTo(temp.getDOB())>0)
+        	    		if(rb3.equals("After") && request.getParameter("dateofbirth").compareTo(temp.getDOB())>=0)
         	    			temp.flag=0;
         	    		if(rb3.equals("On") && !request.getParameter("dateofbirth").equals(temp.getDOB()))
         	    			temp.flag=0;
-        	    		if(rb3.equals("Before") && request.getParameter("dateofbirth").compareTo(temp.getDOB())<0)
+        	    		if(rb3.equals("Before") && request.getParameter("dateofbirth").compareTo(temp.getDOB())<=0)
         	    			temp.flag=0;
         	    	}
         	    	//Apps From
@@ -271,7 +271,7 @@ public class FilterMain extends HttpServlet
         	    			if(!(request.getParameter("category").equals(temp.getCategory())))
         	    			temp.flag=0;
         	    		}
-        	    	writer.println(temp.flag);
+        	    	//writer.println(temp.flag);
         	    	if(!(request.getParameter("phdStrm").equals("All")))
         	    	{if(!(request.getParameter("phdStrm").equals(temp.getPhdStream())))
         	    		temp.flag=0;}
@@ -399,7 +399,15 @@ public class FilterMain extends HttpServlet
         	    		if(request.getParameter("ScoreGat").equals("Less than") && Integer.parseInt(temp.getGateScore())>=value)
         	    			temp.flag=0;
         	    	}
-        	    	if(temp.flag==1)
+        	    	valid=1;
+        	    	if(request.getParameter("AppsFrom").compareTo(request.getParameter("AppsTo"))>0)
+        	    	{
+        	    		valid=0;
+        	    		//writer.println("Some error");
+        	    	}
+        	    	
+        	    	
+        	    	if(temp.flag==1 && valid==1)
         	    	{
         	    		finalData.add(temp);
         	    	//	System.out.println(temp.getName());
@@ -409,6 +417,10 @@ public class FilterMain extends HttpServlet
         	    		
         	 
         	}
+			if(valid==0)
+			{
+				writer.println("Fill the fields correctly");
+			}
 		//	writer.println(request.getParameter("gender"));
 		//	writer.println(request.getParameter("name"));
 		//	writer.println(request.getParameter("dateofbirth"));
@@ -422,7 +434,9 @@ public class FilterMain extends HttpServlet
 			{
 				writer.println("<tr><td>"+temp.name+"</td><td>"+temp.enrollmentNo+"</td></tr>");
 			}
-			writer.println(finalData.size());
+			writer.println("<br>");
+			writer.println("Total eligible candidates are: "+finalData.size());
+			writer.println("<br>");
 			writer.println("</body></html>");
 		}
 		
