@@ -437,6 +437,7 @@ public class FilterMain extends HttpServlet
 			writer.println("<br>");
 			writer.println("Total eligible candidates are: "+finalData.size());
 			writer.println("<br>");
+			writer.println("<input type=\"file\" name=\"pic\">");
 			writer.println("</body></html>");
 		}
 		
