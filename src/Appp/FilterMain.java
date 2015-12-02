@@ -114,6 +114,7 @@ public class FilterMain extends HttpServlet
         writer.println("<title>" + "FILTER ENTRIES" + "</title></head>");
         writer.println("<body><h1>" + "FILTER ENTRIES" + "</h1>");
         writer.println("<form method='post'>");
+       // writer.println("<input type=\"file\" name=\"pic\">");
         writer.println("<table>");
         writer.println("<tr>");
         writer.println("<td>Name</td>");
@@ -124,7 +125,7 @@ public class FilterMain extends HttpServlet
         writer.println("<td>Email</td><td><textarea name='mail' "
                 + "cols='40' rows='1'></textarea></td>");
         writer.println("</tr><tr>");
-        writer.println("<td>Enrollment No</td><td><textarea name=\"enro\" "
+        writer.println("<td>Enrollment No</td><td><textarea name=\"enro\" type=\"number\" "
                 + "cols='40' rows='1'></textarea></td></tr>");
         
         writer.println("<tr><td>Category</td><td><select name=\"category\"><option value=\"All\">All</option> <option value=\"SC\">SC</option><option value=\"ST\">ST</option>"
@@ -437,7 +438,8 @@ public class FilterMain extends HttpServlet
 			writer.println("<br>");
 			writer.println("Total eligible candidates are: "+finalData.size());
 			writer.println("<br>");
-			writer.println("<input type=\"file\" name=\"pic\">");
+			
+			//writer.println(request.getParameter("pic"));
 			writer.println("</body></html>");
 		}
 		
